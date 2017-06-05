@@ -1,0 +1,126 @@
+package com.kodgames.agent.service.server;
+
+import java.util.List;
+import com.kodgames.agent.start.NetInitializer;
+import com.kodgames.agent.start.ServerConfigInitializer;
+import com.kodgames.corgi.core.constant.GlobalConstants;
+import com.kodgames.corgi.core.constant.ServerType;
+import com.kodgames.corgi.core.net.Connection;
+import com.kodgames.corgi.core.service.PublicService;
+import com.kodgames.corgi.core.util.config_utils.AddressConfig;
+import com.kodgames.corgi.core.util.config_utils.ServerConfig;
+import com.kodgames.message.proto.server.ServerProtoBuf;
+import com.kodgames.message.proto.server.ServerProtoBuf.SSGetLaunchInfoREQ;
+import com.kodgames.message.proto.server.ServerProtoBuf.ServerConfigPROTO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ * 负责服务器间消息处理的服务
+ */
+public class ServerService extends PublicService
+{
+	private static final long serialVersionUID = -5044397739800845261L;
+	private Logger logger = LoggerFactory.getLogger(ServerService.class);
+	
+	//自身的启动配置
+	private ServerConfig self;
+
+	private Connection managerConnection;
+	private Connection gameConnection;
+
+	public void onGameConnect(Connection gameConnection)
+	{
+		this.gameConnection = gameConnection;
+	}
+
+	public void onGameDisconnect()
+	{
+		this.gameConnection = null;
+	}
+
+	/**
+	 * 当连上ManagerServer时请求LaunchInfo (由ManagerServer分配监听端口)
+	 * @param connection
+	 */
+	public void onManagerConnect(Connection connection)
+	{
+		managerConnection = connection;
+
+		SSGetLaunchInfoREQ.Builder builder = SSGetLaunchInfoREQ.newBuilder();
+		ServerConfigPROTO.Builder configBuilder = ServerConfigPROTO.newBuilder();
+		configBuilder.setArea(ServerConfigInitializer.getInstance().getAreaId());
+		configBuilder.setType(ServerConfigInitializer.getInstance().getServerType());
+		configBuilder.setId(ServerConfigInitializer.getInstance().getServerId());
+		builder.setServer(configBuilder.build());
+		connection.write(GlobalConstants.DEFAULT_CALLBACK, builder.build());
+	}
+
+	public void onManagerDisconnect(Connection connection)
+	{
+		NetInitializer.getInstance().connectToManager();
+	}
+
+	public Connection getGameConnection()
+	{
+		return gameConnection;
+	}
+	
+	public int getServerId()
+	{
+		return self.getId();
+	}
+
+	public void onAcquireLaunchInfo(ServerConfig config)
+	{
+		self = config;
+	}
+
+	public void onAcquireOnlineServersInfo(List<ServerConfigPROTO> list)
+	{
+	}
+
+	/**
+	 * manager主动发送移除下线的服务器
+	 * @param id 被移除的id
+	 */
+	public void onManagerRemoveServer(int id)
+	{
+	}
+
+	public void startSelf(ServerConfig config)
+	{
+		AddressConfig forClient = config.getListen_socket_for_client();
+		AddressConfig forGame = config.getListen_socket_for_server();
+		if (forClient == null || forGame == null)
+		{
+			logger.error("listen_socket_for_client {} listen_socket_for_server {} error, getLanchInfo again!!!!!!!!!!!!!!",
+					forClient, forGame);
+			this.getLaunchInfo();
+			return;
+		}
+
+		self = config;
+
+		NetInitializer.getInstance().openPortForGame(forGame.getPort());
+
+		registerToManagerServer();
+	}
+
+	private void getLaunchInfo()
+	{
+		SSGetLaunchInfoREQ.Builder launchBuilder = SSGetLaunchInfoREQ.newBuilder();
+		launchBuilder.setServer(ServerConfigPROTO.newBuilder().setArea(1).setType(ServerType.AGENT_SERVER).build());
+		this.managerConnection.write(GlobalConstants.DEFAULT_CALLBACK, launchBuilder.build());
+	}
+
+	//启动流程
+	private void registerToManagerServer()
+	{
+		NetInitializer.getInstance().openPortForInterface(self.getListen_socket_for_client().getPort());
+		NetInitializer.getInstance().openPortForGmt(self.getListen_http_for_gmt().getPort(), self.getId());
+		ServerProtoBuf.SSRegisterServerREQ.Builder builder = ServerProtoBuf.SSRegisterServerREQ.newBuilder();
+		builder.setServer(self.toProto());
+		managerConnection.write(GlobalConstants.DEFAULT_CALLBACK, builder.build());
+	}
+}

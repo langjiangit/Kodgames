@@ -1,0 +1,14 @@
+{
+	"interfaceIp":"10.23.1.141", 
+	"interfacePort":3770, 
+	"dealPlayInterval":1000, 
+	"chatInterval":60000, 
+	"marqueeInterval":60000, 
+	"mailInterval":60000, 
+	"createQuitInterval":1000, 
+	"passProbability":30, 
+	"matchInterval":1000, 
+	"gamePlaysList":[524289, 65546], 
+	"stressServer":0, 
+	"proVersion":30000
+}

@@ -1,0 +1,95 @@
+2017-04-05 18:29:20,806 [Thread:main] c.k.c.common.client.ClientConfig     L115  DEBUG - StressClient config : interfaceIp=10.23.1.141, interfacePort=3770, dealPlayInterval=1000, chatInterval=60000, marqueeInterval=60000, mailInterval=60000, createQuitInterval=1000, passProbability=30, matchInterval=1000, gamePlaysList=[524289, 65546], stressServer=0, proVersion=30000, libVersion=0, threadPoolSize=2
+2017-04-05 18:29:21,957 [Thread:main] com.kodgames.core.timer.TimerMgr     L253  DEBUG - TimerMgr.addEventTimer register event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent success
+2017-04-05 18:29:21,960 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayCardReqNumTimer$$Lambda$1/1782148126@70b0b186 timeInfo TaskTimeInfo: openTime 2017-04-05 18:29:21.903 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:29:41.903, status : 0
+2017-04-05 18:29:21,962 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 18:29:21,963 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayerResponseTimer$$Lambda$2/97652294@6a472554 timeInfo TaskTimeInfo: openTime 2017-04-05 18:29:21.961 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:29:41.961, status : 0
+2017-04-05 18:29:21,964 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 18:29:21,964 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.RoomRecvStepNumTimer$$Lambda$3/1381713434@58c1c010 timeInfo TaskTimeInfo: openTime 2017-04-05 18:29:21.963 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:29:41.963, status : 0
+2017-04-05 18:29:22,031 [Thread:main] c.k.c.c.net.ServerMessageInitializer L72   WARN  - Don't set corresponding protocol class for the protocol:P_SC_COMMON_RES in the PrococolDesc.xml
+2017-04-05 18:29:22,066 [Thread:main] i.n.u.i.l.InternalLoggerFactory      L71   DEBUG - Using SLF4J as the default logging framework
+2017-04-05 18:29:22,072 [Thread:main] i.n.util.internal.PlatformDependent0 L76   DEBUG - java.nio.Buffer.address: available
+2017-04-05 18:29:22,072 [Thread:main] i.n.util.internal.PlatformDependent0 L76   DEBUG - sun.misc.Unsafe.theUnsafe: available
+2017-04-05 18:29:22,072 [Thread:main] i.n.util.internal.PlatformDependent0 L71   DEBUG - sun.misc.Unsafe.copyMemory: available
+2017-04-05 18:29:22,072 [Thread:main] i.n.util.internal.PlatformDependent0 L76   DEBUG - java.nio.Bits.unaligned: true
+2017-04-05 18:29:22,073 [Thread:main] i.n.util.internal.PlatformDependent  L71   DEBUG - Platform: Windows
+2017-04-05 18:29:22,073 [Thread:main] i.n.util.internal.PlatformDependent  L76   DEBUG - Java version: 8
+2017-04-05 18:29:22,073 [Thread:main] i.n.util.internal.PlatformDependent  L76   DEBUG - -Dio.netty.noUnsafe: false
+2017-04-05 18:29:22,073 [Thread:main] i.n.util.internal.PlatformDependent  L76   DEBUG - sun.misc.Unsafe: available
+2017-04-05 18:29:22,073 [Thread:main] i.n.util.internal.PlatformDependent  L76   DEBUG - -Dio.netty.noJavassist: false
+2017-04-05 18:29:22,074 [Thread:main] i.n.util.internal.PlatformDependent  L71   DEBUG - Javassist: unavailable
+2017-04-05 18:29:22,074 [Thread:main] i.n.util.internal.PlatformDependent  L71   DEBUG - You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2017-04-05 18:29:22,074 [Thread:main] i.n.util.internal.PlatformDependent  L76   DEBUG - -Dio.netty.tmpdir: C:\Users\kod\AppData\Local\Temp (java.io.tmpdir)
+2017-04-05 18:29:22,074 [Thread:main] i.n.util.internal.PlatformDependent  L76   DEBUG - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2017-04-05 18:29:22,074 [Thread:main] i.n.util.internal.PlatformDependent  L76   DEBUG - -Dio.netty.noPreferDirect: false
+2017-04-05 18:29:22,078 [Thread:main] i.n.c.MultithreadEventLoopGroup      L76   DEBUG - -Dio.netty.eventLoopThreads: 8
+2017-04-05 18:29:22,088 [Thread:main] io.netty.channel.nio.NioEventLoop    L76   DEBUG - -Dio.netty.noKeySetOptimization: false
+2017-04-05 18:29:22,088 [Thread:main] io.netty.channel.nio.NioEventLoop    L76   DEBUG - -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-04-05 18:29:22,132 [Thread:main] c.k.client.common.client.Player      L349  WARN  - Player start login........
+2017-04-05 18:29:22,200 [Thread:pool-1-thread-1] i.n.util.internal.ThreadLocalRandom  L71   DEBUG - -Dio.netty.initialSeedUniquifier: 0x1b7bfedba6a34758 (took 1 ms)
+2017-04-05 18:29:22,214 [Thread:pool-1-thread-1] io.netty.buffer.ByteBufUtil          L76   DEBUG - -Dio.netty.allocator.type: unpooled
+2017-04-05 18:29:22,214 [Thread:pool-1-thread-1] io.netty.buffer.ByteBufUtil          L76   DEBUG - -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-04-05 18:29:22,221 [Thread:pool-1-thread-1] c.k.c.core.net.server.SimpleClient   L84   INFO  - Connect to /10.23.1.141:3770 success
+2017-04-05 18:29:22,223 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L284  DEBUG - Active  connectionID:10001
+2017-04-05 18:29:22,234 [Thread:pool-ServerMessageInitializer-3-thread-1] c.k.client.common.client.Player      L389  DEBUG - CIAccountAuthREQ:message=channel: "test"
+username: "13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+refreshToken: " "
+code: " "
+proVersion: "20000"
+
+2017-04-05 18:29:22,276 [Thread:pool-ServerMessageInitializer-3-thread-1] io.netty.util.Recycler               L76   DEBUG - -Dio.netty.recycler.maxCapacity.default: 262144
+2017-04-05 18:29:22,281 [Thread:nioEventLoopGroup-2-1] io.netty.util.ResourceLeakDetector   L81   DEBUG - -Dio.netty.leakDetectionLevel: simple
+2017-04-05 18:29:22,283 [Thread:nioEventLoopGroup-2-1] io.netty.util.internal.Cleaner0      L76   DEBUG - java.nio.ByteBuffer.cleaner(): available
+2017-04-05 18:29:22,283 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 131073:20001, ip address /10.23.1.141:3770, connectionid 10001 connection 809153972 len 71 sendAmount 1
+2017-04-05 18:29:22,324 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 131074:20002, ip address /10.23.1.141:3770, connectionid 10001 len 382 recvAmount 1
+2017-04-05 18:29:22,327 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.c.a.a.ICAccountAuthRESAction     L20   INFO  - ICAccountAuthRESAction : 10001 -> result: 16908290
+channel: "test"
+username: "13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+refreshToken: "testToken"
+accountId: 5800638
+nickname: "13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+headImageUrl: "head-13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+sex: 1
+roleId: 5800638
+gameServerId: 16842753
+ip: "10.23.1.141"
+proVersion {
+  needUpdate: false
+  version: "0"
+  description: "0"
+}
+libVersion {
+  needUpdate: false
+  forceUpdate: false
+  version: ""
+  description: ""
+  url: ""
+}
+timestamp: 1491388162317
+signature: "c60fca4922e9b0d670a563bc7ee041b4b9ad0c56360037e6da8856db7a7dac5d594004f3f178ac69003e4a7a234c1f5a1910bf73d961398a44577aa3957aa13f"
+.
+2017-04-05 18:29:22,330 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.client.common.client.Player      L799  DEBUG - roleId=5800638 onAccountAuth
+2017-04-05 18:29:22,333 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 196609:30001, ip address /10.23.1.141:3770, connectionid 10001 connection 339706694 len 258 sendAmount 2
+2017-04-05 18:29:22,843 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 196610:30002, ip address /10.23.1.141:3770, connectionid 10001 len 78 recvAmount 2
+2017-04-05 18:29:22,845 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.c.a.account.GCLoginRESAction     L20   INFO  - GCLoginRESAction : 10001 -> result: 1245186
+roomCardCount: 99999
+battleId: 0
+roomId: 0
+marqueeVersion: 1
+newMail: false
+newLimitedCostlessActivity: false
+noticeVersion: 0
+activityInfo {
+  activityId: 300001
+  startTime: 1485482400000
+  endTime: 1485986400000
+}
+activityInfo {
+  activityId: 300003
+  startTime: 1486605600000
+  endTime: 1486936800000
+}
+buttonValue: 1
+timeStamp: 1491388162810
+.
+2017-04-05 18:29:22,858 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.client.common.client.Player      L410  DEBUG - roleId=5800638 login success
+2017-04-05 18:29:22,858 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.client.common.client.Player      L149  WARN  - All players login success!!!!!!!

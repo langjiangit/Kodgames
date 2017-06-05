@@ -1,0 +1,195 @@
+2017-04-05 17:01:32,916 [Thread:main] c.k.c.c.net.ServerMessageInitializer L72   WARN  - Don't set corresponding protocol class for the protocol:P_SC_COMMON_RES in the PrococolDesc.xml
+2017-04-05 17:01:33,076 [Thread:main] c.k.client.common.client.Player      L349  WARN  - Player start login........
+2017-04-05 17:01:33,361 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.client.common.client.Player      L149  WARN  - All players login success!!!!!!!
+2017-04-05 17:01:48,891 [Thread:main] c.k.c.common.client.ClientConfig     L115  DEBUG - StressClient config : interfaceIp=10.23.1.110, interfacePort=3770, dealPlayInterval=1000, chatInterval=60000, marqueeInterval=60000, mailInterval=60000, createQuitInterval=1000, passProbability=30, matchInterval=1000, gamePlaysList=[524289, 65546], stressServer=0, proVersion=30000, libVersion=0, threadPoolSize=2
+2017-04-05 17:01:50,166 [Thread:main] com.kodgames.core.timer.TimerMgr     L253  DEBUG - TimerMgr.addEventTimer register event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent success
+2017-04-05 17:01:50,168 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayCardReqNumTimer$$Lambda$1/1782148126@70b0b186 timeInfo TaskTimeInfo: openTime 2017-04-05 17:01:50.105 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 17:02:10.105, status : 0
+2017-04-05 17:01:50,171 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 17:01:50,172 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayerResponseTimer$$Lambda$2/97652294@6a472554 timeInfo TaskTimeInfo: openTime 2017-04-05 17:01:50.170 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 17:02:10.170, status : 0
+2017-04-05 17:01:50,172 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 17:01:50,173 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.RoomRecvStepNumTimer$$Lambda$3/1381713434@58c1c010 timeInfo TaskTimeInfo: openTime 2017-04-05 17:01:50.172 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 17:02:10.172, status : 0
+2017-04-05 17:01:50,229 [Thread:main] c.k.c.c.net.ServerMessageInitializer L72   WARN  - Don't set corresponding protocol class for the protocol:P_SC_COMMON_RES in the PrococolDesc.xml
+2017-04-05 17:01:50,309 [Thread:main] c.k.client.common.client.Player      L349  WARN  - Player start login........
+2017-04-05 17:01:50,398 [Thread:pool-1-thread-1] c.k.c.core.net.server.SimpleClient   L84   INFO  - Connect to /10.23.1.110:3770 success
+2017-04-05 17:01:50,399 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L284  DEBUG - Active  connectionID:10001
+2017-04-05 17:01:50,411 [Thread:pool-ServerMessageInitializer-3-thread-1] c.k.client.common.client.Player      L389  DEBUG - CIAccountAuthREQ:message=channel: "test"
+username: "abe70ae2-568c-48da-bd68-e2af64f64ac5StressTest_971"
+refreshToken: " "
+code: " "
+proVersion: "20000"
+
+2017-04-05 17:01:50,464 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 131073:20001, ip address /10.23.1.110:3770, connectionid 10001 connection 625653764 len 71 sendAmount 1
+2017-04-05 17:01:50,491 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 131074:20002, ip address /10.23.1.110:3770, connectionid 10001 len 382 recvAmount 1
+2017-04-05 17:01:50,493 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.c.a.a.ICAccountAuthRESAction     L20   INFO  - ICAccountAuthRESAction : 10001 -> result: 16908290
+channel: "test"
+username: "abe70ae2-568c-48da-bd68-e2af64f64ac5StressTest_971"
+refreshToken: "testToken"
+accountId: 5000353
+nickname: "abe70ae2-568c-48da-bd68-e2af64f64ac5StressTest_971"
+headImageUrl: "head-abe70ae2-568c-48da-bd68-e2af64f64ac5StressTest_971"
+sex: 1
+roleId: 5000353
+gameServerId: 16842753
+ip: "10.23.1.141"
+proVersion {
+  needUpdate: false
+  version: "0"
+  description: "0"
+}
+libVersion {
+  needUpdate: false
+  forceUpdate: false
+  version: ""
+  description: ""
+  url: ""
+}
+timestamp: 1491383094053
+signature: "4d137e933d93e465e389b7c6e265e1edad409dc22a9e72ce0efd7672e425f1e587118a9238d53b2d46b43ddd1a1ab6b1d3bb904e445999b31d7f51faa46a0176"
+.
+2017-04-05 17:01:50,498 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.client.common.client.Player      L799  DEBUG - roleId=5000353 onAccountAuth
+2017-04-05 17:01:50,502 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 196609:30001, ip address /10.23.1.110:3770, connectionid 10001 connection 385051529 len 171 sendAmount 2
+2017-04-05 17:01:50,519 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 196610:30002, ip address /10.23.1.110:3770, connectionid 10001 len 76 recvAmount 2
+2017-04-05 17:01:50,521 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.c.a.account.GCLoginRESAction     L20   INFO  - GCLoginRESAction : 10001 -> result: 1245186
+roomCardCount: 15
+battleId: 0
+roomId: 0
+marqueeVersion: 1
+newMail: false
+newLimitedCostlessActivity: false
+noticeVersion: 0
+activityInfo {
+  activityId: 300001
+  startTime: 1486656000000
+  endTime: 1487519999000
+}
+activityInfo {
+  activityId: 300003
+  startTime: 1486656000000
+  endTime: 1487519999000
+}
+buttonValue: 1
+timeStamp: 1491383094084
+.
+2017-04-05 17:01:50,528 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.client.common.client.Player      L410  DEBUG - roleId=5000353 login success
+2017-04-05 17:01:50,528 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.client.common.client.Player      L149  WARN  - All players login success!!!!!!!
+2017-04-05 18:27:39,474 [Thread:main] c.k.c.common.client.ClientConfig     L115  DEBUG - StressClient config : interfaceIp=10.23.1.141, interfacePort=3770, dealPlayInterval=1000, chatInterval=60000, marqueeInterval=60000, mailInterval=60000, createQuitInterval=1000, passProbability=30, matchInterval=1000, gamePlaysList=[524289, 65546], stressServer=0, proVersion=30000, libVersion=0, threadPoolSize=2
+2017-04-05 18:27:45,051 [Thread:main] com.kodgames.core.timer.TimerMgr     L253  DEBUG - TimerMgr.addEventTimer register event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent success
+2017-04-05 18:27:45,053 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayCardReqNumTimer$$Lambda$1/1782148126@70b0b186 timeInfo TaskTimeInfo: openTime 2017-04-05 18:27:44.999 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:28:04.999, status : 0
+2017-04-05 18:27:45,057 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 18:27:45,059 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayerResponseTimer$$Lambda$2/97652294@6a472554 timeInfo TaskTimeInfo: openTime 2017-04-05 18:27:45.054 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:28:05.054, status : 0
+2017-04-05 18:27:45,059 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 18:27:45,060 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.RoomRecvStepNumTimer$$Lambda$3/1381713434@58c1c010 timeInfo TaskTimeInfo: openTime 2017-04-05 18:27:45.059 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:28:05.059, status : 0
+2017-04-05 18:27:45,121 [Thread:main] c.k.c.c.net.ServerMessageInitializer L72   WARN  - Don't set corresponding protocol class for the protocol:P_SC_COMMON_RES in the PrococolDesc.xml
+2017-04-05 18:27:45,225 [Thread:main] c.k.client.common.client.Player      L349  WARN  - Player start login........
+2017-04-05 18:27:45,319 [Thread:pool-1-thread-1] c.k.c.core.net.server.SimpleClient   L84   INFO  - Connect to /10.23.1.141:3770 success
+2017-04-05 18:27:45,321 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L284  DEBUG - Active  connectionID:10001
+2017-04-05 18:27:45,334 [Thread:pool-ServerMessageInitializer-3-thread-1] c.k.client.common.client.Player      L389  DEBUG - CIAccountAuthREQ:message=channel: "test"
+username: "a32b10b2-1089-490a-96ec-e24c08a25d96StressTest_523"
+refreshToken: " "
+code: " "
+proVersion: "20000"
+
+2017-04-05 18:27:45,385 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 131073:20001, ip address /10.23.1.141:3770, connectionid 10001 connection 72082317 len 71 sendAmount 1
+2017-04-05 18:27:45,570 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 131074:20002, ip address /10.23.1.141:3770, connectionid 10001 len 382 recvAmount 1
+2017-04-05 18:27:45,573 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.c.a.a.ICAccountAuthRESAction     L20   INFO  - ICAccountAuthRESAction : 10001 -> result: 16908290
+channel: "test"
+username: "a32b10b2-1089-490a-96ec-e24c08a25d96StressTest_523"
+refreshToken: "testToken"
+accountId: 5800561
+nickname: "a32b10b2-1089-490a-96ec-e24c08a25d96StressTest_523"
+headImageUrl: "head-a32b10b2-1089-490a-96ec-e24c08a25d96StressTest_523"
+sex: 1
+roleId: 5800561
+gameServerId: 16842753
+ip: "10.23.1.141"
+proVersion {
+  needUpdate: false
+  version: "0"
+  description: "0"
+}
+libVersion {
+  needUpdate: false
+  forceUpdate: false
+  version: ""
+  description: ""
+  url: ""
+}
+timestamp: 1491388065553
+signature: "363a12d11ecaaa4b70f24322e5666b95d7b0f609bf72c87ea631ff2cd33087f15b61da586eb67cd91273585150df486f25b37e1eb57d2339fa9fd01ba3649339"
+.
+2017-04-05 18:27:45,577 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.client.common.client.Player      L799  DEBUG - roleId=5800561 onAccountAuth
+2017-04-05 18:27:45,580 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 196609:30001, ip address /10.23.1.141:3770, connectionid 10001 connection 1962146673 len 171 sendAmount 2
+2017-04-05 18:27:45,635 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 196610:30002, ip address /10.23.1.141:3770, connectionid 10001 len 14 recvAmount 2
+2017-04-05 18:27:45,637 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.c.a.account.GCLoginRESAction     L20   INFO  - GCLoginRESAction : 10001 -> result: 21168130
+.
+2017-04-05 18:29:20,806 [Thread:main] c.k.c.common.client.ClientConfig     L115  DEBUG - StressClient config : interfaceIp=10.23.1.141, interfacePort=3770, dealPlayInterval=1000, chatInterval=60000, marqueeInterval=60000, mailInterval=60000, createQuitInterval=1000, passProbability=30, matchInterval=1000, gamePlaysList=[524289, 65546], stressServer=0, proVersion=30000, libVersion=0, threadPoolSize=2
+2017-04-05 18:29:21,957 [Thread:main] com.kodgames.core.timer.TimerMgr     L253  DEBUG - TimerMgr.addEventTimer register event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent success
+2017-04-05 18:29:21,960 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayCardReqNumTimer$$Lambda$1/1782148126@70b0b186 timeInfo TaskTimeInfo: openTime 2017-04-05 18:29:21.903 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:29:41.903, status : 0
+2017-04-05 18:29:21,962 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 18:29:21,963 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.PlayerResponseTimer$$Lambda$2/97652294@6a472554 timeInfo TaskTimeInfo: openTime 2017-04-05 18:29:21.961 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:29:41.961, status : 0
+2017-04-05 18:29:21,964 [Thread:main] com.kodgames.core.timer.TimerMgr     L248  DEBUG - TimerMgr.addEventTimer found event interface com.kodgames.core.task.timeEvent.IScheduleSecondEvent already exist then addtoList
+2017-04-05 18:29:21,964 [Thread:main] com.kodgames.core.task.TaskService   L199  DEBUG - registerScheduleTask task com.kodgames.client.timer.RoomRecvStepNumTimer$$Lambda$3/1381713434@58c1c010 timeInfo TaskTimeInfo: openTime 2017-04-05 18:29:21.963 closeTime 1970-01-01 08:00:00.000 periodType 7 count 10, timerList is timer: 2017-04-05 18:29:41.963, status : 0
+2017-04-05 18:29:22,031 [Thread:main] c.k.c.c.net.ServerMessageInitializer L72   WARN  - Don't set corresponding protocol class for the protocol:P_SC_COMMON_RES in the PrococolDesc.xml
+2017-04-05 18:29:22,132 [Thread:main] c.k.client.common.client.Player      L349  WARN  - Player start login........
+2017-04-05 18:29:22,221 [Thread:pool-1-thread-1] c.k.c.core.net.server.SimpleClient   L84   INFO  - Connect to /10.23.1.141:3770 success
+2017-04-05 18:29:22,223 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L284  DEBUG - Active  connectionID:10001
+2017-04-05 18:29:22,234 [Thread:pool-ServerMessageInitializer-3-thread-1] c.k.client.common.client.Player      L389  DEBUG - CIAccountAuthREQ:message=channel: "test"
+username: "13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+refreshToken: " "
+code: " "
+proVersion: "20000"
+
+2017-04-05 18:29:22,283 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 131073:20001, ip address /10.23.1.141:3770, connectionid 10001 connection 809153972 len 71 sendAmount 1
+2017-04-05 18:29:22,324 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 131074:20002, ip address /10.23.1.141:3770, connectionid 10001 len 382 recvAmount 1
+2017-04-05 18:29:22,327 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.c.a.a.ICAccountAuthRESAction     L20   INFO  - ICAccountAuthRESAction : 10001 -> result: 16908290
+channel: "test"
+username: "13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+refreshToken: "testToken"
+accountId: 5800638
+nickname: "13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+headImageUrl: "head-13090224-d9d6-4f99-8a1b-8b13b90646ffStressTest_678"
+sex: 1
+roleId: 5800638
+gameServerId: 16842753
+ip: "10.23.1.141"
+proVersion {
+  needUpdate: false
+  version: "0"
+  description: "0"
+}
+libVersion {
+  needUpdate: false
+  forceUpdate: false
+  version: ""
+  description: ""
+  url: ""
+}
+timestamp: 1491388162317
+signature: "c60fca4922e9b0d670a563bc7ee041b4b9ad0c56360037e6da8856db7a7dac5d594004f3f178ac69003e4a7a234c1f5a1910bf73d961398a44577aa3957aa13f"
+.
+2017-04-05 18:29:22,330 [Thread:pool-ServerMessageInitializer-3-thread-2] c.k.client.common.client.Player      L799  DEBUG - roleId=5800638 onAccountAuth
+2017-04-05 18:29:22,333 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L235  DEBUG - write: protocol id is 196609:30001, ip address /10.23.1.141:3770, connectionid 10001 connection 339706694 len 258 sendAmount 2
+2017-04-05 18:29:22,843 [Thread:nioEventLoopGroup-2-1] c.k.client.net.MessageProcessor      L166  DEBUG - read: protocol id is 196610:30002, ip address /10.23.1.141:3770, connectionid 10001 len 78 recvAmount 2
+2017-04-05 18:29:22,845 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.c.a.account.GCLoginRESAction     L20   INFO  - GCLoginRESAction : 10001 -> result: 1245186
+roomCardCount: 99999
+battleId: 0
+roomId: 0
+marqueeVersion: 1
+newMail: false
+newLimitedCostlessActivity: false
+noticeVersion: 0
+activityInfo {
+  activityId: 300001
+  startTime: 1485482400000
+  endTime: 1485986400000
+}
+activityInfo {
+  activityId: 300003
+  startTime: 1486605600000
+  endTime: 1486936800000
+}
+buttonValue: 1
+timeStamp: 1491388162810
+.
+2017-04-05 18:29:22,858 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.client.common.client.Player      L410  DEBUG - roleId=5800638 login success
+2017-04-05 18:29:22,858 [Thread:pool-ServerMessageInitializer-3-thread-3] c.k.client.common.client.Player      L149  WARN  - All players login success!!!!!!!

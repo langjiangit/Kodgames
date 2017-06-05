@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IPSelectConfig isOpen="true" defaultGroupName="defaultGroup">
+    <IPGroup name="group1" isActive="true" description="可以添加描述信息">
+        <GroupCondition type="REGISTER" compareType="LESS" intMinValue="7" intMaxValue="7" strValue="" />
+        <GroupCondition type="REGION" compareType="EQUAL" intMinValue="0" intMaxValue="0" strValue="贵阳" />
+    </IPGroup>
+
+    <IPGroup name="group2" isActive="true" description="可以添加描述信息">
+        <GroupCondition type="REGISTER" compareType="LESS" intMinValue="7" intMaxValue="7" strValue="" />
+        <GroupCondition type="REGION" compareType="NE" intMinValue="0" intMaxValue="0" strValue="贵阳" />
+    </IPGroup>
+
+    <IPGroup name="group3" isActive="true" description="可以添加描述信息">
+        <GroupCondition type="COMBAT" compareType="GE" intMinValue="100" intMaxValue="100" strValue="" />
+        <GroupCondition type="REGION" compareType="EQUAL" intMinValue="0" intMaxValue="0" strValue="贵阳" />
+    </IPGroup>
+</IPSelectConfig>
